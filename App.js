@@ -11,6 +11,7 @@ export default function App() {
           <View>
               <HomeScreen />
               <NavOptions />
+              <Text>Hello World</Text>
           </View>
       </Provider>
 
