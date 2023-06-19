@@ -16,8 +16,19 @@ const HomeScreen = ({}) => {
 
                 <GooglePlacesAutocomplete
                     placeholder="Where From?"
-                    nearbyPlacesAPI="GooglePlacesSearch"
-                    debounce={400}/>
+                    styles={{
+                        container: {
+                            flex: 0,
+                        },
+                        textInput: {
+                            fontSize: 18
+                        }
+                    }}
+                    query={{
+                        key: GOOGLE_MAPS_APIKEY,
+                        language: 'en'
+                    }}
+                    nearbyPlacesAPI="GooglePlacesSearch"/>
                 <NavOptions />
             </View>
         </SafeAreaView>
